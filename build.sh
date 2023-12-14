@@ -7,14 +7,15 @@ SUBARCH="arm64"
 DEFCONFIG=nogravity_defconfig
 COMPILER=clang
 LINKER="lld"
-COMPILERDIR="/media/pierre/Expension/Android/PocoX3Pro/Kernels/Proton-Clang"
+TC="$HOME/kernel-builder/compilers"
+COMPILERDIR="$TC/Proton-Clang"
 
 # Cleanup output
 rm -rf out/outputs/${PHONE}/*
 
 # Export shits
-export KBUILD_BUILD_USER=Pierre2324
-export KBUILD_BUILD_HOST=G7-7588
+export KBUILD_BUILD_USER=Win11
+export KBUILD_BUILD_HOST=WSL2
 
 # Speed up build process
 MAKE="./makeparallel"
