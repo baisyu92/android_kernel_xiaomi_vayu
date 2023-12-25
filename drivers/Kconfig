@@ -229,4 +229,12 @@ source "drivers/halls/Kconfig"
 
 source "drivers/trusty/Kconfig"
 
+# vayu audio drivers
+
+source "techpack/audio/Kconfig"
+
+# vayu data drivers
+
+source "techpack/data/Kconfig"
+
 endmenu
